@@ -10,6 +10,10 @@ export const getUsers = query({
 export const add = mutation({
     args: {},
     handler: async (ctx) => {
+        const identity = await ctx.auth.getUserIdentity();
+        if (!identity) {
+            throw new Error("Unauthorized");
+        }
         const userId = await ctx.db.insert("users", {
             name: "Tahir"
         });
