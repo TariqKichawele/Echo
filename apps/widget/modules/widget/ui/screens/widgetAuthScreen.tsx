@@ -1,6 +1,13 @@
 import React from 'react'
 import WidgetHeader from '../components/widgetHeader'
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@workspace/ui/components/form'
+import { 
+    Form, 
+    FormControl, 
+    FormField, 
+    FormItem, 
+    FormLabel, 
+    FormMessage 
+} from '@workspace/ui/components/form'
 import { Button } from '@workspace/ui/components/button'
 import { Input } from '@workspace/ui/components/input'
 import { useForm } from 'react-hook-form'
