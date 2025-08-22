@@ -11,6 +11,7 @@ export default function Page({ searchParams }: Props) {
   const { organizationId } = use(searchParams);
   return (
     <WidgetView organizationId={organizationId} />
+
   )
 }
 
